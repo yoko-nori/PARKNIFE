@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/01_Scenes/Tutorial.unity
+- path: Assets/01_Scenes/StageSelectScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
