@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/01_Scenes/StageSelectScene.unity
+=======
 - path: Assets/01_Scenes/SelecStageScene.unity
+>>>>>>> main
   isLoaded: 1
   isActive: 1
   isSubScene: 0
