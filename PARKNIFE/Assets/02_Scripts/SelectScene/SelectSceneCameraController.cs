@@ -14,6 +14,8 @@ public class SelectSceneCameraController : MonoBehaviour
     private const float ANGLE_LIMIT_UP = 60f;
     private const float ANGLE_LIMIT_DOWN = -60f;
 
+    public bool camera_state = true;
+
     void Start()
     {
         mainCamera = Camera.main.gameObject;
@@ -24,7 +26,7 @@ public class SelectSceneCameraController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1) && camera_state == true)
         {
             rotateCmaeraAngle();
         }

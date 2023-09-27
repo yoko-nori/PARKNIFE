@@ -12,6 +12,8 @@ public class SelectScenePlayerController : MonoBehaviour
 
     public float moveSpeed;
 
+    public bool player_state = true;
+
     void Start()
     {
         TryGetComponent(out rb);
@@ -24,7 +26,14 @@ public class SelectScenePlayerController : MonoBehaviour
         inputHorizontal = Input.GetAxis("Horizontal");
         inputVertical = Input.GetAxis("Vertical");
 
-        Move();
+        if(player_state == true)
+        {
+            Move();
+        }
+        else if(player_state == false)
+        {
+            Debug.Log("SelectScene");
+        }
 
     }
 
